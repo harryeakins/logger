@@ -3,8 +3,8 @@ import 'dart:io' as io;
 
 import 'package:io/ansi.dart';
 
-import 'package:logger/src/logger.dart';
-import 'package:logger/src/log_printer.dart';
+import 'package:dart_logger/src/logger.dart';
+import 'package:dart_logger/src/log_printer.dart';
 
 /// Outputs simple log messages:
 /// ```

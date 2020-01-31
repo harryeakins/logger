@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:logger/src/logger.dart';
-import 'package:logger/src/log_printer.dart';
-import 'package:logger/src/ansi_color.dart';
+import 'package:dart_logger/src/logger.dart';
+import 'package:dart_logger/src/log_printer.dart';
+import 'package:dart_logger/src/ansi_color.dart';
 
 /// Default implementation of [LogPrinter].
 ///
@@ -116,7 +116,7 @@ class PrettyPrinter extends LogPrinter {
     for (var line in lines) {
       var match = stackTraceRegex.matchAsPrefix(line);
       if (match != null) {
-        if (match.group(2).startsWith('package:logger')) {
+        if (match.group(2).startsWith('package:dart_logger')) {
           continue;
         }
         var newLine = "#$count   ${match.group(1)} (${match.group(2)})";

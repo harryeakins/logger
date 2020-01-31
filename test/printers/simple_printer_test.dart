@@ -1,6 +1,6 @@
-import 'package:logger/src/printers/simple_printer.dart';
+import 'package:dart_logger/src/printers/simple_printer.dart';
 import 'package:test/test.dart';
-import 'package:logger/logger.dart';
+import 'package:dart_logger/logger.dart';
 
 const ansiEscapeLiteral = '\x1B';
 

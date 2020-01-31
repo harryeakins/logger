@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:test/test.dart';
-import 'package:logger/logger.dart';
+import 'package:dart_logger/logger.dart';
 
 typedef PrinterCallback = List<String> Function(
     Level level, dynamic message, dynamic error, StackTrace stackTrace);

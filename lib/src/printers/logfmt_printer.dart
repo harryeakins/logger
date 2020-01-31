@@ -1,5 +1,5 @@
-import 'package:logger/src/log_printer.dart';
-import 'package:logger/src/logger.dart';
+import 'package:dart_logger/src/log_printer.dart';
+import 'package:dart_logger/src/logger.dart';
 
 /// Outputs a logfmt message:
 /// ```
