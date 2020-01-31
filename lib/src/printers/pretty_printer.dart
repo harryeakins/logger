@@ -108,7 +108,7 @@ class PrettyPrinter extends LogPrinter {
     for (var line in lines) {
       var match = stackTraceRegex.matchAsPrefix(line);
       if (match != null) {
-        if (match.group(2).startsWith('package:logger')) {
+        if (match.group(2).startsWith('package:dart_logger')) {
           continue;
         }
         var newLine = ("#$count   ${match.group(1)} (${match.group(2)})");
